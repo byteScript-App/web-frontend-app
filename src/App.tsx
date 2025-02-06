@@ -1,7 +1,5 @@
 export const App = () => {
-  return (
-    <>
-      App
-    </>
-  )
-}
+	const a = 'asd';
+
+	return <>App {a}</>;
+};
