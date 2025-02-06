@@ -1,5 +1,5 @@
 export const App = () => {
-	const a = 'asd';
+	const _a = 'asd';
 
-	return <>App {a}</>;
+	return <>App</>;
 };
