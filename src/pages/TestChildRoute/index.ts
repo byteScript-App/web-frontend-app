@@ -1,0 +1,1 @@
+export { TestChildRoute } from './TestChildRoute';
