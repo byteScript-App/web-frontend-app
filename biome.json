@@ -28,9 +28,6 @@
     "enabled": true,
     "rules": {
       "recommended": false,
-      "nursery": {
-        "noCommonJs": "error"
-      },
       "complexity": {
         "noExtraBooleanCast": "error",
         "noMultipleSpacesInRegularExpressionLiterals": "error",
