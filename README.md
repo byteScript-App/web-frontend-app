@@ -2,5 +2,8 @@
 
 Document: (TBD)
 
-- About bun+vite
+- About FSD Architecture
+- About bun+vite+bun:test
 - About BIOME
+- About lefthook
+- About Commitlint

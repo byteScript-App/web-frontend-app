@@ -1,15 +1,24 @@
 #   Refer for explanation to following link:
 #   https://lefthook.dev/configuration/
 
+commit-msg:
+  commands:
+    "Check commit message":
+      run: echo "Checking commit message..." && bun commitlint --edit {1}
+
 pre-commit:
   commands:
-    check:
+    "Linting code...":
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
-      run: npx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      run: npx @biomejs/biome lint --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
       stage_fixed: true
+    "Formatting code...":
+      run: bunx biome format --write ./src
+    "Running tests...":
+      run: bun test
 
 pre-push:
   commands:
-    check:
+    "Checking code on push...":
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
-      run: npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {push_files}
+      run: npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true {push_files}
