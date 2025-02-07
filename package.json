@@ -11,7 +11,7 @@
 		"test": "bun test",
 		"test:with:report": "bun test --reporter=junit --reporter-outfile=./bun.xml",
 		"check": "bunx biome check ./src",
-		"check:fix": "bunx biome check --apply ./src",
+		"check:fix": "bunx biome check --write ./src",
 		"format": "bunx biome format ./src",
 		"format:fix": "bunx biome format --write ./src",
 		"lint": "bunx biome lint ./src",
