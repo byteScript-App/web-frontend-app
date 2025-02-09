@@ -7,12 +7,13 @@ interface AppRouteBaseProps {
 
 interface PublicAppRouteProps extends AppRouteBaseProps {
 	private: false;
-	children?: (PublicAppRouteProps | PrivateAppRouteProps)[];
+	guestOnly?: boolean;
+	children?: Record<string, PublicAppRouteProps | PrivateAppRouteProps>;
 }
 
 interface PrivateAppRouteProps extends AppRouteBaseProps {
 	private: true;
-	children?: PrivateAppRouteProps[];
+	children?: Record<string, PrivateAppRouteProps>;
 }
 
 export type AppRouteProps = PublicAppRouteProps | PrivateAppRouteProps;

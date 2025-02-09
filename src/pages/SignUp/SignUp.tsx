@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
-export const SignUp: FC = () => {
-	return <div>Sign Up page</div>;
+export const SignUp = () => {
+	return <div>Sign Up</div>;
 };
