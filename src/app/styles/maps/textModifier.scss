@@ -1,0 +1,83 @@
+@use "../variables" as *;
+
+// -------- Text Modifiers -------- //
+/* You can specify any css-rule
+        font-weight: [default=$regular]
+        font-family: [default=$font-primary]
+        font-size
+        line-height
+        ...
+*/
+$default: (
+        h1: (
+                font-size: $h1,
+                line-height: 100%,
+                font-weight: $bold,
+        ),
+        h2: (
+                font-size: $h2,
+                line-height: 112.5%,
+                font-weight: $medium,
+        ),
+        h3: (
+                font-size: $h3,
+                line-height: 125%,
+                font-weight: $medium,
+        ),
+        h4: (
+                font-size: $h4,
+                line-height: 125%,
+                font-weight: $medium,
+        ),
+        h5: (
+                font-size: $h5,
+                line-height: 125%,
+                font-weight: $bold,
+        ),
+        text: (
+                font-size: $text,
+                line-height: 150%,
+        ),
+        text-s: (
+                font-size: $text-s,
+                line-height: 112.5%,
+        ),
+        text-xs: (
+                font-size: $text-xs,
+                line-height: 100%,
+        ),
+        code: (
+                font-size: $code,
+                line-height: 150%,
+                font-family: $font-code
+        )
+);
+
+// You can change any css rule in different screen sizes:
+$extraSmallScreen: (
+        h1: (
+                font-size: $h2,
+                line-height: 112.5%,
+        )
+);
+$smallScreen: (
+        h1: (
+                font-size: $h2,
+                line-height: 112.5%,
+        )
+);
+$mediumScreen: ();
+$normalScreen: ();
+$largeScreen: ();
+$extraLargeScreen: ();
+
+// Mixin will automatically apply all styles according to each screen size
+$typography: (
+        default: $default,
+        extraSmallScreen: $extraSmallScreen,
+        smallScreen: $smallScreen,
+        mediumScreen: $mediumScreen,
+        normalScreen: $normalScreen,
+        largeScreen: $largeScreen,
+        extraLargeScreen: $extraLargeScreen
+);

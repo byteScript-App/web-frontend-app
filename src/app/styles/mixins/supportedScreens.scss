@@ -1,0 +1,43 @@
+@use "../variables" as *;
+
+@mixin extraSmallScreen {
+  @media (min-width: #{$screen-xs}) and (max-width: #{$screen-sm - 1}) {
+    @content;
+  }
+}
+
+@mixin smallScreen {
+  @media (min-width: #{$screen-sm}) and (max-width: #{$screen-md - 1}) {
+    @content;
+  }
+}
+
+@mixin mediumScreen {
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg - 1}) {
+    @content;
+  }
+}
+
+@mixin normalScreen {
+  @media (min-width: #{$screen-lg}) and (max-width: #{$screen-xl - 1}) {
+    @content;
+  }
+}
+
+@mixin largeScreen {
+  @media (min-width: #{$screen-xl}) and (max-width: #{$screen-xxl - 1}) {
+    @content;
+  }
+}
+
+@mixin extraLargeScreen {
+  @media (min-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+@mixin customScreenSize($screen) {
+  @media (min-width: #{$screen}px) {
+    @content;
+  }
+}

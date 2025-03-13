@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "../maps" as *;
+
+@mixin generateMediaAccordingToBreakpoint($size) {
+  @if map.has-key($breakpoints, $size) {
+    $min-width: map.get($breakpoints, $size);
+    @media (min-width: #{$min-width}) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "../variables" as *;
+
+$breakpoints: (
+        xs: $screen-xs,
+        sm: $screen-sm,
+        md: $screen-md,
+        lg: $screen-lg,
+        xl: $screen-xl,
+        xxl: $screen-xxl
+);
+
+
+$container-widths: (
+        xs: 100%,
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1180px,
+        xxl: 1440px
+);

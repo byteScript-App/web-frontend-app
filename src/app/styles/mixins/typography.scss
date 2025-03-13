@@ -1,0 +1,61 @@
+@use "sass:map";
+@use "../maps" as *;
+@use "../mixins/supportedScreens" as *;
+
+@mixin typography($type) {
+  // Apply default styles
+  $default-style: map.get(map.get($typography, default), $type);
+
+  @if not $default-style {
+    @error "No typography settings found for '#{$type}' Supported types: h1, h2, h3, h4, h5, text, text-s, text-xs, code";
+  }
+
+  @each $key, $value in $default-style {
+    #{$key}: $value;
+  }
+
+  // Apply responsive typography properties
+  @each $bp in (extraSmallScreen, smallScreen, mediumScreen, normalScreen, largeScreen, extraLargeScreen) {
+    $breakpoint-styles: map.get(map.get($typography, $bp), $type);
+
+    @if $breakpoint-styles {
+      @if $bp == extraSmallScreen {
+        @include extraSmallScreen {
+          @each $key, $value in $breakpoint-styles {
+            #{$key}: $value;
+          }
+        }
+      } @else if $bp == smallScreen {
+        @include smallScreen {
+          @each $key, $value in $breakpoint-styles {
+            #{$key}: $value;
+          }
+        }
+      } @else if $bp == mediumScreen {
+        @include mediumScreen {
+          @each $key, $value in $breakpoint-styles {
+            #{$key}: $value;
+          }
+        }
+      } @else if $bp == normalScreen {
+        @include normalScreen {
+          @each $key, $value in $breakpoint-styles {
+            #{$key}: $value;
+          }
+        }
+      } @else if $bp == largeScreen {
+        @include largeScreen {
+          @each $key, $value in $breakpoint-styles {
+            #{$key}: $value;
+          }
+        }
+      } @else if $bp == extraLargeScreen {
+        @include extraLargeScreen {
+          @each $key, $value in $breakpoint-styles {
+            #{$key}: $value;
+          }
+        }
+      }
+    }
+  }
+}
