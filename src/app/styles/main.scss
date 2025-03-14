@@ -52,6 +52,10 @@ p, span {
   @include typography(text);
 }
 
+button {
+  @include space(margin-right, 1);
+}
+
 img {
   user-drag: none;
   user-select: none;

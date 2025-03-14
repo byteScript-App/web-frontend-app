@@ -8,6 +8,9 @@
         line-height
         ...
 */
+
+$allowed-typography-types: (h1, h2, h3, h4, h5, text, text-s, text-xs, code);
+
 $default: (
         h1: (
                 font-size: $h1,

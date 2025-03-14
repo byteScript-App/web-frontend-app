@@ -1,0 +1,45 @@
+// Use @space only for margins
+$allowed-space-properties: (margin, margin-top, margin-right, margin-bottom, margin-left);
+
+$default-spacing: (
+  // identifier: {value}px
+        0.25: 2,
+        0.50: 4,
+        0.75: 6,
+        1: 8,
+        1.25: 10,
+        1.50: 12,
+        1.75: 14,
+        2: 16,
+        2.50: 20,
+        3: 24,
+        4: 32,
+        4.50: 36,
+        5: 40,
+        6: 48,
+        8: 64,
+        9: 72,
+        10: 80,
+        12: 96,
+        15: 120,
+        30: 240,
+);
+
+// You can change space in different screen sizes:
+$extraSmallScreen-spacing: ();
+$smallScreen-spacing: ();
+$mediumScreen-spacing: ();
+$normalScreen-spacing: ();
+$largeScreen-spacing: ();
+$extraLargeScreen-spacing: ();
+
+// Mixin will automatically apply space according to each screen size
+$spacing: (
+        default: $default-spacing,
+        extraSmallScreen: $extraSmallScreen-spacing,
+        smallScreen: $smallScreen-spacing,
+        mediumScreen: $mediumScreen-spacing,
+        normalScreen: $normalScreen-spacing,
+        largeScreen: $largeScreen-spacing,
+        extraLargeScreen: $extraLargeScreen-spacing
+);

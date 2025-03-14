@@ -3,6 +3,10 @@
 @use "../mixins/supportedScreens" as *;
 
 @mixin typography($type) {
+  @if not index($allowed-typography-types, $type) {
+    @error "Invalid type '#{$type}' in @include typography(). Only known types are allowed: #{join($allowed-typography-types, '')}";
+  }
+
   // Apply default styles
   $default-style: map.get(map.get($typography, default), $type);
 
