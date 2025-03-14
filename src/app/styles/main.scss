@@ -61,26 +61,41 @@ img {
   -ms-user-select: none;
 }
 
-/* CUSTOM SCROLL BAR */
-//::-webkit-scrollbar {
-//  width: .5rem;
-//  height: .5rem;
-//}
-//
-//::-webkit-scrollbar-corner {
-//  background-color: $gray-900;
-//}
-//
-//::-webkit-scrollbar-track {
-//  background-color: transparent;
-//  border-radius: -;
-//}
-//
-//::-webkit-scrollbar-thumb {
-//  background-color: $gray-700;
-//  border-radius: -;
-//
-//  &:hover {
-//    background-color: $gray-600;
-//  }
-//}
+::-webkit-scrollbar {
+  width: .75rem;
+  height: .75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: theme($theme-scroll-track);
+  border-radius: .75rem;
+
+  &:hover {
+    background-color: theme($theme-scroll-track-hover);
+  }
+
+  &:active {
+    background: $primary-dark; // TODO fix for light theme
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme($theme-scroll-thumb);
+  border-radius: .75rem;
+
+  &:hover {
+    background: theme($theme-scroll-thumb-hover);
+  }
+
+  &:active {
+    background: $white; // TODO fix for light theme
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background: theme($theme-background-primary);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}

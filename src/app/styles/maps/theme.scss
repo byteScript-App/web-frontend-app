@@ -20,8 +20,10 @@ $theme-text-tertiary: --theme-text-tertiary;
 $theme-icon-primary: --theme-icon-primary;
 
 
-$theme-scroll-background: --theme-scroll-background;
-$theme-scroll: --theme-scroll;
+$theme-scroll-track: --theme-scroll-track;
+$theme-scroll-track-hover: --theme-scroll-track-hover;
+$theme-scroll-thumb: --theme-scroll-thumb;
+$theme-scroll-thumb-hover: --theme-scroll-thumb-hover;
 
 $theme-light: (
         $theme-background-primary: #E4ECEC,
@@ -36,8 +38,10 @@ $theme-light: (
         $theme-text-secondary: #202D2C,
         $theme-text-tertiary: #808786,
         $theme-icon-primary: #202D2C,
-        $theme-scroll-background: #D8DFDF,
-        $theme-scroll: #F7FFFF,
+        $theme-scroll-track: #D8DFDF,
+        $theme-scroll-track-hover: #D8DFDF, // TODO fix
+        $theme-scroll-thumb: #F7FFFF,
+        $theme-scroll-thumb-hover: #F7FFFF, // TODO fix
 );
 
 $theme-dark: (
@@ -53,12 +57,8 @@ $theme-dark: (
         $theme-text-secondary: $gray-200,
         $theme-text-tertiary: $gray-500,
         $theme-icon-primary: $gray-200,
-        $theme-scroll-background: $gray-800,
-        $theme-scroll: $gray-600
+        $theme-scroll-track: $gray-900,
+        $theme-scroll-track-hover: $black,
+        $theme-scroll-thumb: $gray-700,
+        $theme-scroll-thumb-hover: $gray-600
 );
-
-@mixin spread-map($map: ()) {
-  @each $key, $value in $map {
-    #{$key}: $value;
-  }
-}
