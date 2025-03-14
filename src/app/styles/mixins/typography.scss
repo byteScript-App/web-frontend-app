@@ -10,10 +10,6 @@
   // Apply default styles
   $default-style: map.get(map.get($typography, default), $type);
 
-  @if not $default-style {
-    @error "No typography settings found for '#{$type}' Supported types: h1, h2, h3, h4, h5, text, text-s, text-xs, code";
-  }
-
   @each $key, $value in $default-style {
     #{$key}: $value;
   }
