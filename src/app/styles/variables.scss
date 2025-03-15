@@ -1,0 +1,71 @@
+@use 'sass:color';
+
+// B&W
+$black: #000403;
+$white: #F2FAF9;
+
+$gray-900: #060A09;
+$gray-800: #0D1110;
+$gray-700: #191D1C;
+$gray-600: #202322;
+$gray-500: #404342;
+$gray-400: #797D7D;
+$gray-300: #808181;
+$gray-200: #B6BBBB;
+$gray-150: #C2C8C7;
+$gray-130: #DAE1E0;
+$gray-100: #E6EDED;
+$gray-50: #ECF4F3;
+
+// Main colors
+$primary-light: #00FFF0;
+$primary: #009990;
+$primary-dark: #003D3A;
+
+// Colors
+$red: #D42E22;
+$red-50: color.adjust($red, $lightness: 50%);
+
+$green: #0FA84B;
+$green-50: color.adjust($green, $lightness: 50%);
+
+$yellow: #D89126;
+$yellow-50: color.adjust($yellow, $lightness: 50%);
+
+$blue: #05A8F2;
+$blue-50: color.adjust($blue, $lightness: 50%);
+
+$purple: #562BBA;
+$purple-50: color.adjust($purple, $lightness: 50%);
+
+// Screen sizes
+$screen-xs: 360px; // Smallest devices
+$screen-sm: 576px; // Small tablets and large smartphones
+$screen-md: 768px; // Small tablets (portrait)
+$screen-lg: 1024px; // Tablets and small desktops
+$screen-xl: 1240px; // Large tablets and desktops
+$screen-xxl: 1920px; // Extra large screens
+
+// Fonts
+$font-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-primary: Inter, $font-default;
+$font-code: "Source Code Pro", $font-default;
+
+// Font weights
+$bold: 700;
+$medium: 500;
+$regular: 400;
+
+// Font sizes
+$h1: 3rem;
+$h2: 2rem;
+$h3: 1.5rem;
+$h4: 1.25rem;
+$h5: 1rem;
+$text: 1rem;
+$text-s: 0.875rem;
+$text-xs: 0.75rem;
+$code: 1rem;
+
+// Container
+$container-padding: 1rem;

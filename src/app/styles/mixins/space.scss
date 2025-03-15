@@ -1,0 +1,52 @@
+@use "sass:map";
+@use "../maps" as *;
+@use "../mixins/supportedScreens" as *;
+
+@mixin space($property, $key) {
+  // Validate property
+  @if not index($allowed-space-properties, $property) {
+    @error "Invalid property '#{$property}' in @include space(). Only margin properties are allowed: #{join($allowed-space-properties, '')}";
+  }
+
+  // Get the default spacing value
+  $default-space: map.get(map.get($spacing, default), $key);
+
+  @if not $default-space {
+    @error "Invalid key '#{$key}' in @include space(). Only these values are allowed: #{map.keys($default-spacing)}";
+  }
+
+  #{$property}: #{$default-space / 16}rem; // convert px into rem for consistency
+
+  // Apply responsive spacing values
+  @each $bp in (extraSmallScreen, smallScreen, mediumScreen, normalScreen, largeScreen, extraLargeScreen) {
+    $breakpoint-space: map.get(map.get($spacing, $bp), $key);
+
+    @if $breakpoint-space {
+      @if $bp == extraSmallScreen {
+        @include extraSmallScreen {
+          #{$property}: #{$breakpoint-space / 16}rem;
+        }
+      } @else if $bp == smallScreen {
+        @include smallScreen {
+          #{$property}: #{$breakpoint-space / 16}rem;
+        }
+      } @else if $bp == mediumScreen {
+        @include mediumScreen {
+          #{$property}: #{$breakpoint-space / 16}rem;
+        }
+      } @else if $bp == normalScreen {
+        @include normalScreen {
+          #{$property}: #{$breakpoint-space / 16}rem;
+        }
+      } @else if $bp == largeScreen {
+        @include largeScreen {
+          #{$property}: #{$breakpoint-space / 16}rem;
+        }
+      } @else if $bp == extraLargeScreen {
+        @include extraLargeScreen {
+          #{$property}: #{$breakpoint-space / 16}rem;
+        }
+      }
+    }
+  }
+}

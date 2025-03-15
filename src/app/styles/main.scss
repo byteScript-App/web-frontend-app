@@ -1,0 +1,105 @@
+@use "sass:map";
+@use "variables" as *;
+
+@use "maps" as *;
+@use "mixins" as *;
+
+@use "utilClasses" as *;
+@use "utilFunctions" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Source+Code+Pro&display=swap');
+
+html {
+  @include spread-map($theme-light);
+}
+
+html[data-theme="dark"] {
+  @include spread-map($theme-dark);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+  font-weight: $regular;
+  background-color: theme($theme-background-primary);
+  color: theme($theme-text-primary),
+}
+
+h1 {
+  @include typography(h1);
+}
+
+h2 {
+  @include typography(h2);
+}
+
+h3 {
+  @include typography(h3);
+}
+
+h4 {
+  @include typography(h4);
+}
+
+h5 {
+  @include typography(h5);
+}
+
+p, span {
+  @include typography(text);
+}
+
+button {
+  @include space(margin-right, 1);
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: .75rem;
+  height: .75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: theme($theme-scroll-track);
+  border-radius: .75rem;
+
+  &:hover {
+    background-color: theme($theme-scroll-track-hover);
+  }
+
+  &:active {
+    background: $primary-dark; // TODO fix for light theme
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme($theme-scroll-thumb);
+  border-radius: .75rem;
+
+  &:hover {
+    background: theme($theme-scroll-thumb-hover);
+  }
+
+  &:active {
+    background: $white; // TODO fix for light theme
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background: theme($theme-background-primary);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}

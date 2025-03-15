@@ -1,0 +1,64 @@
+@use '../variables' as *;
+
+// Saving CSS variables in SCSS as I don't wanna use CSS variables in entire application for consistency
+// Mixin @spread-map will take care of moving all SCSS variables into CSS
+
+$theme-background-primary: --theme-background-primary;
+$theme-background-secondary: --theme-background-secondary;
+$theme-background-tertiary: --theme-background-tertiary;
+$theme-background-tertiary-stoke: --theme-background-tertiary-stoke;
+
+$theme-button-primary: --theme-button-primary;
+$theme-button-primary-stroke: --theme-button-primary-stroke;
+$theme-button-secondary: --theme-button-secondary;
+$theme-button-secondary-stroke: --theme-button-secondary-stroke;
+
+$theme-text-primary: --theme-text-primary;
+$theme-text-secondary: --theme-text-secondary;
+$theme-text-tertiary: --theme-text-tertiary;
+
+$theme-icon-primary: --theme-icon-primary;
+
+
+$theme-scroll-track: --theme-scroll-track;
+$theme-scroll-track-hover: --theme-scroll-track-hover;
+$theme-scroll-thumb: --theme-scroll-thumb;
+$theme-scroll-thumb-hover: --theme-scroll-thumb-hover;
+
+$theme-light: (
+        $theme-background-primary: #E4ECEC,
+        $theme-background-secondary: #EBF2F2,
+        $theme-background-tertiary: #F7FFFF,
+        $theme-background-tertiary-stoke: #D8DFDF,
+        $theme-button-primary: #F7FFFF,
+        $theme-button-primary-stroke: #D8DFDF,
+        $theme-button-secondary: #EBF2F2,
+        $theme-button-secondary-stroke: #E4ECEC,
+        $theme-text-primary: #000F0E,
+        $theme-text-secondary: #202D2C,
+        $theme-text-tertiary: #808786,
+        $theme-icon-primary: #202D2C,
+        $theme-scroll-track: #D8DFDF,
+        $theme-scroll-track-hover: #D8DFDF, // TODO fix
+        $theme-scroll-thumb: #F7FFFF,
+        $theme-scroll-thumb-hover: #F7FFFF, // TODO fix
+);
+
+$theme-dark: (
+        $theme-background-primary: $black,
+        $theme-background-secondary: $gray-900,
+        $theme-background-tertiary: $gray-800,
+        $theme-background-tertiary-stoke: $gray-700,
+        $theme-button-primary: $gray-800,
+        $theme-button-primary-stroke: $gray-700,
+        $theme-button-secondary: $gray-700,
+        $theme-button-secondary-stroke: $gray-600,
+        $theme-text-primary: $white,
+        $theme-text-secondary: $gray-200,
+        $theme-text-tertiary: $gray-500,
+        $theme-icon-primary: $gray-200,
+        $theme-scroll-track: $gray-900,
+        $theme-scroll-track-hover: $black,
+        $theme-scroll-thumb: $gray-700,
+        $theme-scroll-thumb-hover: $gray-600
+);

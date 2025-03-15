@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+@use "maps" as *;
+
+.container {
+  width: 100%;
+  max-width: map.get($container-widths, xxl);
+  margin: 0 auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+
+  @each $size, $width in $container-widths {
+    @include generateMediaAccordingToBreakpoint($size) {
+      max-width: $width;
+    }
+  }
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

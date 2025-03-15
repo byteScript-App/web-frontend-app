@@ -22,8 +22,15 @@ export const App = () => {
 			<button onClick={() => setTheme(Theme.dark)}>Dark Theme</button>
 			<button onClick={() => setTheme(Theme.light)}>Light Theme</button>
 
-			<div>
+			<div className='container'>
 				<h1>{t('hello')}</h1>
+				<h2>{t('hello')}</h2>
+				<h3>{t('hello')}</h3>
+				<h4>{t('hello')}</h4>
+				<h5>{t('hello')}</h5>
+				<p>{t('hello')}</p>
+				<span>{t('hello')}</span>
+				<br />
 				<p>{t('welcome', { name: 'Sherzod' })}</p>
 				<div>
 					<button

@@ -12,3 +12,4 @@
 - About BIOME
 - About lefthook
 - About Commitlint
+- About SCSS
