@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../maps" as *;
+@use "sass:list" as *;
 @use "../mixins/supportedScreens" as *;
 
 @mixin typography($type) {
