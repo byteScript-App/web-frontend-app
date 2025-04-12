@@ -25,9 +25,10 @@ export const App = () => {
 			<Icons.Base64Image width={64} lineHeight={64} hoverEffect={true} />
 			<Icons.Base64Text width={64} lineHeight={64} hoverEffect={true} />
 			<Icons.Certificate width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.ColorBlindness width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.ColorBlind width={64} lineHeight={64} hoverEffect={true} />
 			<Icons.ColorPicker width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.CronExpression width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.Cron width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.DateConvert width={64} lineHeight={64} hoverEffect={true} />
 
 			<div className='container'>
 				<h1>{t('hello')}</h1>

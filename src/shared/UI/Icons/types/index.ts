@@ -1,13 +1,17 @@
 import { FunctionComponent } from 'react';
 
-export interface IconsPrototypeProps {
-	Base64Image: FunctionComponent<SpriteIconsProps>;
-	Base64Text: FunctionComponent<SpriteIconsProps>;
-	Certificate: FunctionComponent<SpriteIconsProps>;
-	ColorBlindness: FunctionComponent<SpriteIconsProps>;
-	ColorPicker: FunctionComponent<SpriteIconsProps>;
-	CronExpression: FunctionComponent<SpriteIconsProps>;
-}
+export type IconsNameMap =
+	| 'Base64Image'
+	| 'Base64Text'
+	| 'Certificate'
+	| 'ColorBlind'
+	| 'ColorPicker'
+	| 'Cron'
+	| 'DateConvert';
+
+export type IconsPrototypeProps = FunctionComponent & {
+	[K in IconsNameMap]: FunctionComponent<SpriteIconsProps>;
+};
 
 interface IconsBaseProps {
 	width?: number;

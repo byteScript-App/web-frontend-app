@@ -1,18 +1,20 @@
 import {
+	_SVGBase64Image,
 	_SVGBase64Text,
 	_SVGCertificate,
-	_SVGColorBlindness,
+	_SVGColorBlind,
 	_SVGColorPicker,
-	_SVGCronExpression,
-	_SvgBase64Image,
+	_SVGCron,
+	_SVGDateConvert,
 } from './SpriteIcons';
 import { IconsPrototypeProps } from './types';
 
 export const Icons: IconsPrototypeProps = () => <h3>You must use {`<Icon.IconName/>`}</h3>;
 
-Icons.Base64Image = _SvgBase64Image;
+Icons.Base64Image = _SVGBase64Image;
 Icons.Base64Text = _SVGBase64Text;
 Icons.Certificate = _SVGCertificate;
-Icons.ColorBlindness = _SVGColorBlindness;
+Icons.ColorBlind = _SVGColorBlind;
 Icons.ColorPicker = _SVGColorPicker;
-Icons.CronExpression = _SVGCronExpression;
+Icons.Cron = _SVGCron;
+Icons.DateConvert = _SVGDateConvert;

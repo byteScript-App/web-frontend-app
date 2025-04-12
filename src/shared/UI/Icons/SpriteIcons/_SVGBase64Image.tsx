@@ -5,7 +5,7 @@ import { SpriteIconVariant, processSpriteIcons } from '@/shared/utils';
 
 import { SpriteIconsProps } from '../types';
 
-export const _SvgBase64Image: FC<SpriteIconsProps> = ({
+export const _SVGBase64Image: FC<SpriteIconsProps> = ({
 	width = 48,
 	lineHeight = 48,
 	hoverEffect = true,
