@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
 import { ThemeContext } from '@/app';
-import { Theme } from '@/shared/configs';
+import { Theme } from '@/shared/utils';
 import { LOCAL_PERSISTOR } from '@/shared/utils';
 
 import { useThemeDetector } from '../useThemeDetector';

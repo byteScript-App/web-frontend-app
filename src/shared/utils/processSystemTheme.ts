@@ -1,4 +1,4 @@
-import { Theme } from '@/shared/configs';
+import { Theme } from '@/shared/utils';
 import { IS_DARK_MATCH_MEDIA } from './constants';
 
 export const getMatchMedia = (): MediaQueryList => {

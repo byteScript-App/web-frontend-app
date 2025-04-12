@@ -1,4 +1,4 @@
-import { Theme } from '@/shared/configs';
+import { Theme } from '@/shared/utils';
 import { PropsWithChildren } from 'react';
 
 export interface ThemeContextProps {

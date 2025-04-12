@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 
-import { Theme } from '@/shared/configs';
+import { Icons } from '@/shared/UI';
 import { useI18n, useTheme } from '@/shared/hooks';
 import { LanguageProps, Languages } from '@/shared/i18n';
-
+import { Theme } from '@/shared/utils';
 import { AppRouter } from './routes';
 
 export const App = () => {
@@ -21,6 +21,13 @@ export const App = () => {
 			<button onClick={() => setTheme(Theme.system)}>System Theme</button>
 			<button onClick={() => setTheme(Theme.dark)}>Dark Theme</button>
 			<button onClick={() => setTheme(Theme.light)}>Light Theme</button>
+
+			<Icons.Base64Image width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.Base64Text width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.Certificate width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.ColorBlindness width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.ColorPicker width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.CronExpression width={64} lineHeight={64} hoverEffect={true} />
 
 			<div className='container'>
 				<h1>{t('hello')}</h1>
