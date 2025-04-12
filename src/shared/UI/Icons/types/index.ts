@@ -7,7 +7,11 @@ export type IconsNameMap =
 	| 'ColorBlind'
 	| 'ColorPicker'
 	| 'Cron'
-	| 'DateConvert';
+	| 'DateConvert'
+	| 'ExpressionTester'
+	| 'Extensions'
+	| 'Gzip'
+	| 'Hash';
 
 export type IconsPrototypeProps = FunctionComponent & {
 	[K in IconsNameMap]: FunctionComponent<SpriteIconsProps>;

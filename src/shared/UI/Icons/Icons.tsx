@@ -6,6 +6,10 @@ import {
 	_SVGColorPicker,
 	_SVGCron,
 	_SVGDateConvert,
+	_SVGExpressionTester,
+	_SVGExtensions,
+	_SVGGzip,
+	_SVGHash,
 } from './SpriteIcons';
 import { IconsPrototypeProps } from './types';
 
@@ -18,3 +22,7 @@ Icons.ColorBlind = _SVGColorBlind;
 Icons.ColorPicker = _SVGColorPicker;
 Icons.Cron = _SVGCron;
 Icons.DateConvert = _SVGDateConvert;
+Icons.ExpressionTester = _SVGExpressionTester;
+Icons.Extensions = _SVGExtensions;
+Icons.Gzip = _SVGGzip;
+Icons.Hash = _SVGHash;

@@ -29,6 +29,10 @@ export const App = () => {
 			<Icons.ColorPicker width={64} lineHeight={64} hoverEffect={true} />
 			<Icons.Cron width={64} lineHeight={64} hoverEffect={true} />
 			<Icons.DateConvert width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.ExpressionTester width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.Extensions width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.Gzip width={64} lineHeight={64} hoverEffect={true} />
+			<Icons.Hash width={64} lineHeight={64} hoverEffect={true} />
 
 			<div className='container'>
 				<h1>{t('hello')}</h1>
