@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 
-import { Icons } from '@/shared/UI';
+import { SpriteIcons } from '@/shared/UI';
 import { useI18n, useTheme } from '@/shared/hooks';
 import { LanguageProps, Languages } from '@/shared/i18n';
 import { Theme } from '@/shared/utils';
@@ -22,17 +22,17 @@ export const App = () => {
 			<button onClick={() => setTheme(Theme.dark)}>Dark Theme</button>
 			<button onClick={() => setTheme(Theme.light)}>Light Theme</button>
 
-			<Icons.Base64Image width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.Base64Text width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.Certificate width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.ColorBlind width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.ColorPicker width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.Cron width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.DateConvert width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.ExpressionTester width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.Extensions width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.Gzip width={64} lineHeight={64} hoverEffect={true} />
-			<Icons.Hash width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Base64Image width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Base64Text width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Certificate width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.ColorBlind width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.ColorPicker width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Cron width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.DateConvert width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.ExpressionTester width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Extensions width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Gzip width={64} lineHeight={64} hoverEffect={true} />
+			<SpriteIcons.Hash width={64} lineHeight={64} hoverEffect={true} />
 
 			<div className='container'>
 				<h1>{t('hello')}</h1>

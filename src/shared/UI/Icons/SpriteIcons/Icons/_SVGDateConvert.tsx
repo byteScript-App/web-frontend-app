@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { useSpriteSVGHoverState } from '@/shared/hooks';
 import { SpriteIconVariant, processSpriteIcons } from '@/shared/utils';
 
-import { SpriteIconsProps } from '../types';
+import { SpriteIconsProps } from '../../types';
 
 export const _SVGDateConvert: FC<SpriteIconsProps> = ({
 	width = 48,

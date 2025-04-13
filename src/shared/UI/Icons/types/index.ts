@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 
-export type IconsNameMap =
+export type SpriteIconsNameMap =
 	| 'Base64Image'
 	| 'Base64Text'
 	| 'Certificate'
@@ -13,8 +13,8 @@ export type IconsNameMap =
 	| 'Gzip'
 	| 'Hash';
 
-export type IconsPrototypeProps = FunctionComponent & {
-	[K in IconsNameMap]: FunctionComponent<SpriteIconsProps>;
+export type SpriteIconsPrototypeProps = FunctionComponent & {
+	[K in SpriteIconsNameMap]: FunctionComponent<SpriteIconsProps>;
 };
 
 interface IconsBaseProps {
