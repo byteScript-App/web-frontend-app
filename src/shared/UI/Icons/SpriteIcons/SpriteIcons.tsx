@@ -1,5 +1,4 @@
 import {
-	SpriteIconsPrototypeProps,
 	_SVGBase64Image,
 	_SVGBase64Text,
 	_SVGCertificate,
@@ -11,10 +10,15 @@ import {
 	_SVGExtensions,
 	_SVGGzip,
 	_SVGHash,
-} from '@/shared/UI';
+} from './Icons';
 
+import { SpriteIconsPrototypeProps } from '../types';
+
+// TODO: change text to error => TextAlert
 export const SpriteIcons: SpriteIconsPrototypeProps = () => (
-	<h3>You must use {`<SpriteIcon.IconName/>`}</h3>
+	<p>
+		You must use structure: <b>{`<SpriteIcon.IconName/>`}</b>
+	</p>
 );
 
 SpriteIcons.Base64Image = _SVGBase64Image;

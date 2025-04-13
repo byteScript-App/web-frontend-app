@@ -4,7 +4,7 @@ export type Nullable<T> = {
 	[K in keyof T]: T[K] | null;
 };
 
-// Route System Types
+// TODO: Route System Types
 export type AppRoutesKeys<T extends AppRoutesProps, K = keyof T> = K extends string
 	? T[K] extends { children: AppRoutesProps }
 		? `${K}.${AppRoutesKeys<T[K]['children']>}` | K

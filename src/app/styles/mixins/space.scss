@@ -1,7 +1,8 @@
 @use "sass:map";
-@use "../maps" as *;
 @use "sass:list" as *;
 @use "sass:math" as *;
+
+@use "../maps" as *;
 @use "../mixins/supportedScreens" as *;
 
 @mixin space($property, $key) {
@@ -17,7 +18,7 @@
     @error "Invalid key '#{$key}' in @include space(). Only these values are allowed: #{map.keys($default-spacing)}";
   }
 
-  #{$property}: #{$default-space}rem; // convert px into rem for consistency
+  #{$property}: #{$default-space}rem;
 
   // Apply responsive spacing values
   @each $bp in (extraSmallScreen, smallScreen, mediumScreen, normalScreen, largeScreen, extraLargeScreen) {
