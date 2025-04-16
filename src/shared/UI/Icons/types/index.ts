@@ -1,20 +1,11 @@
 import { FunctionComponent } from 'react';
+import { SpriteIconsMap } from '../config';
 
-export type SpriteIconsNameMap =
-	| 'Base64Image'
-	| 'Base64Text'
-	| 'Certificate'
-	| 'ColorBlind'
-	| 'ColorPicker'
-	| 'Cron'
-	| 'DateConvert'
-	| 'ExpressionTester'
-	| 'Extensions'
-	| 'Gzip'
-	| 'Hash';
+export type SpriteIconsMapProps = typeof SpriteIconsMap;
+export type SpriteIconsLiteralProp = SpriteIconsMapProps[number];
 
 export type SpriteIconsPrototypeProps = FunctionComponent & {
-	[K in SpriteIconsNameMap]: FunctionComponent<SpriteIconsProps>;
+	[K in SpriteIconsLiteralProp]: FunctionComponent<SpriteIconsProps>;
 };
 
 interface IconsBaseProps {
