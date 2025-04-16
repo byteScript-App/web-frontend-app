@@ -1,1 +1,1 @@
-export { SignIn } from './SignIn';
+export { SignInAsync as SignIn } from './SignIn.async';
