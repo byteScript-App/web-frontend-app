@@ -10,6 +10,19 @@ import {
 	_SVGExtensions,
 	_SVGGzip,
 	_SVGHash,
+	_SVGHtml,
+	_SVGImageConvert,
+	_SVGJWT,
+	_SVGJsonFormatter,
+	_SVGJsonPathTester,
+	_SVGJsonToTable,
+	_SVGJsonYaml,
+	_SVGListComparer,
+	_SVGLoremIpsum,
+	_SVGMarkdown,
+	_SVGNumberConverter,
+	_SVGPasswordGenerator,
+	_SVGPngJpegCompressor,
 } from './Icons';
 
 import { SpriteIconsPrototypeProps } from '../types';
@@ -32,3 +45,16 @@ SpriteIcons.ExpressionTester = _SVGExpressionTester;
 SpriteIcons.Extensions = _SVGExtensions;
 SpriteIcons.Gzip = _SVGGzip;
 SpriteIcons.Hash = _SVGHash;
+SpriteIcons.Html = _SVGHtml;
+SpriteIcons.ImageConvert = _SVGImageConvert;
+SpriteIcons.JsonToTable = _SVGJsonToTable;
+SpriteIcons.JsonFormatter = _SVGJsonFormatter;
+SpriteIcons.JsonPathTester = _SVGJsonPathTester;
+SpriteIcons.JsonYaml = _SVGJsonYaml;
+SpriteIcons.JWT = _SVGJWT;
+SpriteIcons.LoremIpsum = _SVGLoremIpsum;
+SpriteIcons.ListComparer = _SVGListComparer;
+SpriteIcons.Markdown = _SVGMarkdown;
+SpriteIcons.NumberConverter = _SVGNumberConverter;
+SpriteIcons.PasswordGenerator = _SVGPasswordGenerator;
+SpriteIcons.PngJpegCompressor = _SVGPngJpegCompressor;
