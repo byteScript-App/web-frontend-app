@@ -5,7 +5,7 @@ import { SpriteIconVariant, processSpriteIcons } from '@/shared/utils';
 
 import { SpriteIconsProps } from '../../types';
 
-export const _SVGNumberConverter: FC<SpriteIconsProps> = ({
+export const _SVGXmlFormat: FC<SpriteIconsProps> = ({
 	width = 48,
 	lineHeight = 48,
 	hoverEffect = true,
@@ -27,15 +27,22 @@ export const _SVGNumberConverter: FC<SpriteIconsProps> = ({
 				xmlns='http://www.w3.org/2000/svg'
 			>
 				<path
-					d='M20 6L14 42M34 6L28 42'
+					d='M34 34L44 24L34 14'
 					stroke='#404342'
 					strokeWidth='2'
 					strokeLinecap='round'
 					strokeLinejoin='round'
 				/>
 				<path
-					d='M42 18H5.99996L12 14M4 30H40L36 34'
-					stroke='#562BBA'
+					d='M14 14L4 24L14 34'
+					stroke='#404342'
+					strokeWidth='2'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+				/>
+				<path
+					d='M28 6L20 42'
+					stroke='#D89126'
 					strokeWidth='2'
 					strokeLinecap='round'
 					strokeLinejoin='round'
@@ -54,14 +61,21 @@ export const _SVGNumberConverter: FC<SpriteIconsProps> = ({
 				xmlns='http://www.w3.org/2000/svg'
 			>
 				<path
-					d='M20 6L14 42M34 6L28 42'
+					d='M34 34L44 24L34 14'
 					stroke='#009990'
 					strokeWidth='2'
 					strokeLinecap='round'
 					strokeLinejoin='round'
 				/>
 				<path
-					d='M42 18H5.99996L12 14M4 30H40L36 34'
+					d='M14 14L4 24L14 34'
+					stroke='#009990'
+					strokeWidth='2'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+				/>
+				<path
+					d='M28 6L20 42'
 					stroke='#00FFF0'
 					strokeWidth='2'
 					strokeLinecap='round'

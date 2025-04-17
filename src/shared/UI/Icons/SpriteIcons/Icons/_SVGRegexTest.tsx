@@ -5,7 +5,7 @@ import { SpriteIconVariant, processSpriteIcons } from '@/shared/utils';
 
 import { SpriteIconsProps } from '../../types';
 
-export const _SVGRegexTester: FC<SpriteIconsProps> = ({
+export const _SVGRegexTest: FC<SpriteIconsProps> = ({
 	width = 48,
 	lineHeight = 48,
 	hoverEffect = true,

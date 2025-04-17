@@ -10,17 +10,26 @@ import {
 	_SVGHtml,
 	_SVGImageConvert,
 	_SVGJWT,
-	_SVGJsonFormatter,
-	_SVGJsonPathTester,
+	_SVGJsonFormat,
+	_SVGJsonPathTest,
 	_SVGJsonToTable,
 	_SVGJsonYaml,
-	_SVGListComparer,
+	_SVGListCompare,
 	_SVGLoremIpsum,
 	_SVGMarkdown,
-	_SVGNumberConverter,
-	_SVGPasswordGenerator,
-	_SVGPngJpegCompressor,
-	_SVGRegexTester,
+	_SVGNumberConvert,
+	_SVGPasswordGenerate,
+	_SVGQrCode,
+	_SVGRegexTest,
+	_SVGSqlFormat,
+	_SVGTextAnalyze,
+	_SVGTextCompare,
+	_SVGTextEscape,
+	_SVGTimestampConvert,
+	_SVGUrl,
+	_SVGUuidGenerate,
+	_SVGXmlCheck,
+	_SVGXmlFormat,
 } from './Icons';
 
 import { SpriteIconsPrototypeProps } from '../types';
@@ -38,19 +47,28 @@ SpriteIcons.Certificate = _SVGCertificate;
 SpriteIcons.ColorBlind = _SVGColorBlind;
 SpriteIcons.ColorPicker = _SVGColorPicker;
 SpriteIcons.Cron = _SVGCron;
-SpriteIcons.RegexTester = _SVGRegexTester;
+SpriteIcons.RegexTest = _SVGRegexTest;
 SpriteIcons.Gzip = _SVGGzip;
 SpriteIcons.Hash = _SVGHash;
 SpriteIcons.Html = _SVGHtml;
 SpriteIcons.ImageConvert = _SVGImageConvert;
 SpriteIcons.JsonToTable = _SVGJsonToTable;
-SpriteIcons.JsonFormatter = _SVGJsonFormatter;
-SpriteIcons.JsonPathTester = _SVGJsonPathTester;
+SpriteIcons.JsonFormat = _SVGJsonFormat;
+SpriteIcons.JsonPathTest = _SVGJsonPathTest;
 SpriteIcons.JsonYaml = _SVGJsonYaml;
 SpriteIcons.JWT = _SVGJWT;
 SpriteIcons.LoremIpsum = _SVGLoremIpsum;
-SpriteIcons.ListComparer = _SVGListComparer;
+SpriteIcons.ListCompare = _SVGListCompare;
 SpriteIcons.Markdown = _SVGMarkdown;
-SpriteIcons.NumberConverter = _SVGNumberConverter;
-SpriteIcons.PasswordGenerator = _SVGPasswordGenerator;
-SpriteIcons.PngJpegCompressor = _SVGPngJpegCompressor;
+SpriteIcons.NumberConvert = _SVGNumberConvert;
+SpriteIcons.PasswordGenerate = _SVGPasswordGenerate;
+SpriteIcons.QrCode = _SVGQrCode;
+SpriteIcons.SqlFormat = _SVGSqlFormat;
+SpriteIcons.TextAnalyze = _SVGTextAnalyze;
+SpriteIcons.TextCompare = _SVGTextCompare;
+SpriteIcons.TextEscape = _SVGTextEscape;
+SpriteIcons.TimestampConvert = _SVGTimestampConvert;
+SpriteIcons.Url = _SVGUrl;
+SpriteIcons.UuidGenerate = _SVGUuidGenerate;
+SpriteIcons.XmlCheck = _SVGXmlCheck;
+SpriteIcons.XmlFormat = _SVGXmlFormat;
