@@ -1,5 +1,5 @@
 import { AppRoutesProps } from '@/app';
-import { Home, Profile, Settings, SignIn, SignUp } from '@/pages';
+import { Home, NotFound404 } from '@/pages';
 // import { AppRouteByDotKey, AppRoutesKeys, GetAppRouteParams } from '@/shared/types';
 
 export const appRoutes = {
@@ -8,48 +8,10 @@ export const appRoutes = {
 		component: <Home />,
 		private: false,
 	},
-	signIn: {
-		path: '/sign-in',
-		component: <SignIn />,
-		guestOnly: true,
+	notFound: {
+		path: '*',
+		component: <NotFound404 />,
 		private: false,
-	},
-	signUp: {
-		path: '/sign-up',
-		component: <SignUp />,
-		guestOnly: true,
-		private: false,
-	},
-	profile: {
-		path: '/profile',
-		component: <Profile />,
-		private: true,
-	},
-	settings: {
-		path: '/settings',
-		component: <Settings />,
-		private: false,
-		children: {
-			test: {
-				path: '/test',
-				component: <Settings />,
-				private: false,
-				children: {
-					testTwo: {
-						path: '/test-two/:id',
-						component: <Settings />,
-						private: false,
-						children: {
-							testThree: {
-								path: '/test-three/:id/tt/:qq-:zz',
-								component: <Settings />,
-								private: false,
-							},
-						},
-					},
-				},
-			},
-		},
 	},
 } as const satisfies AppRoutesProps;
 

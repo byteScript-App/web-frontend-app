@@ -3,3 +3,4 @@ export * from './Settings';
 export * from './SignIn';
 export * from './Profile';
 export * from './Home';
+export * from './NotFound404';
