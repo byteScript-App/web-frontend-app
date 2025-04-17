@@ -30,8 +30,7 @@ export const App = () => {
 			<SpriteIcons.ColorBlind width={64} lineHeight={64} />
 			<SpriteIcons.ColorPicker width={64} lineHeight={64} />
 			<SpriteIcons.Cron width={64} lineHeight={64} />
-			<SpriteIcons.DateConvert width={64} lineHeight={64} />
-			<SpriteIcons.ExpressionTester width={64} lineHeight={64} />
+			<SpriteIcons.RegexTester width={64} lineHeight={64} />
 			<SpriteIcons.Extensions width={64} lineHeight={64} />
 			<SpriteIcons.Gzip width={64} lineHeight={64} />
 			<SpriteIcons.Hash width={64} lineHeight={64} />

@@ -5,8 +5,6 @@ import {
 	_SVGColorBlind,
 	_SVGColorPicker,
 	_SVGCron,
-	_SVGDateConvert,
-	_SVGExpressionTester,
 	_SVGExtensions,
 	_SVGGzip,
 	_SVGHash,
@@ -23,6 +21,7 @@ import {
 	_SVGNumberConverter,
 	_SVGPasswordGenerator,
 	_SVGPngJpegCompressor,
+	_SVGRegexTester,
 } from './Icons';
 
 import { SpriteIconsPrototypeProps } from '../types';
@@ -40,8 +39,7 @@ SpriteIcons.Certificate = _SVGCertificate;
 SpriteIcons.ColorBlind = _SVGColorBlind;
 SpriteIcons.ColorPicker = _SVGColorPicker;
 SpriteIcons.Cron = _SVGCron;
-SpriteIcons.DateConvert = _SVGDateConvert;
-SpriteIcons.ExpressionTester = _SVGExpressionTester;
+SpriteIcons.RegexTester = _SVGRegexTester;
 SpriteIcons.Extensions = _SVGExtensions;
 SpriteIcons.Gzip = _SVGGzip;
 SpriteIcons.Hash = _SVGHash;
