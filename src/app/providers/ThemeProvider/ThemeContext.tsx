@@ -1,4 +1,4 @@
-import { Theme } from '@/shared/configs';
+import { Theme } from '@/shared/utils';
 import { createContext } from 'react';
 import { ThemeContextProps } from './types';
 

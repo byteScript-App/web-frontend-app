@@ -1,5 +1,5 @@
-import { Theme, themeDataAttribute } from '@/shared/configs';
 import { useThemeDetector } from '@/shared/hooks';
+import { THEME_DATA_ATTRIBUTE, Theme } from '@/shared/utils';
 import { LOCAL_PERSISTOR } from '@/shared/utils';
 import { FC, useEffect, useMemo, useState } from 'react';
 import { ThemeContext } from './ThemeContext';
@@ -26,10 +26,10 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children, initialTheme }
 	}, [defaultTheme, systemTheme]);
 
 	useEffect(() => {
-		const themeValue = document.documentElement.getAttribute(themeDataAttribute);
+		const themeValue = document.documentElement.getAttribute(THEME_DATA_ATTRIBUTE);
 
 		if (themeValue !== theme) {
-			document.documentElement.setAttribute(themeDataAttribute, theme);
+			document.documentElement.setAttribute(THEME_DATA_ATTRIBUTE, theme);
 		}
 	}, [theme]);
 

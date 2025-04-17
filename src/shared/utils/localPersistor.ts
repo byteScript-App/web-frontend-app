@@ -1,4 +1,4 @@
-import { Theme } from '@/shared/configs';
+import { Theme } from '@/shared/utils';
 
 import { LOCAL_STORAGE_THEME_KEY } from './constants';
 

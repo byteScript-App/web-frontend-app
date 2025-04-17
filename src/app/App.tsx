@@ -1,9 +1,8 @@
 import { Suspense } from 'react';
 
-import { Theme } from '@/shared/configs';
 import { useI18n, useTheme } from '@/shared/hooks';
 import { LanguageProps, Languages } from '@/shared/i18n';
-
+import { Theme } from '@/shared/utils';
 import { AppRouter } from './routes';
 
 export const App = () => {

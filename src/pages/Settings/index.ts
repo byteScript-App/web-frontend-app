@@ -1,1 +1,1 @@
-export { Settings } from './Settings';
+export { SettingsAsync as Settings } from './Settings.async';
