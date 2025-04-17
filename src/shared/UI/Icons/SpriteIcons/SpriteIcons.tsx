@@ -5,7 +5,6 @@ import {
 	_SVGColorBlind,
 	_SVGColorPicker,
 	_SVGCron,
-	_SVGExtensions,
 	_SVGGzip,
 	_SVGHash,
 	_SVGHtml,
@@ -40,7 +39,6 @@ SpriteIcons.ColorBlind = _SVGColorBlind;
 SpriteIcons.ColorPicker = _SVGColorPicker;
 SpriteIcons.Cron = _SVGCron;
 SpriteIcons.RegexTester = _SVGRegexTester;
-SpriteIcons.Extensions = _SVGExtensions;
 SpriteIcons.Gzip = _SVGGzip;
 SpriteIcons.Hash = _SVGHash;
 SpriteIcons.Html = _SVGHtml;

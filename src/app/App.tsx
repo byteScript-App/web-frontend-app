@@ -31,15 +31,14 @@ export const App = () => {
 			<SpriteIcons.ColorPicker width={64} lineHeight={64} />
 			<SpriteIcons.Cron width={64} lineHeight={64} />
 			<SpriteIcons.RegexTester width={64} lineHeight={64} />
-			<SpriteIcons.Extensions width={64} lineHeight={64} />
 			<SpriteIcons.Gzip width={64} lineHeight={64} />
 			<SpriteIcons.Hash width={64} lineHeight={64} />
 			<SpriteIcons.Html width={64} lineHeight={64} />
+			<SpriteIcons.ImageConvert width={64} lineHeight={64} />
+			<SpriteIcons.JsonToTable width={64} lineHeight={64} />
 
 			<br />
 
-			<SpriteIcons.ImageConvert width={64} lineHeight={64} />
-			<SpriteIcons.JsonToTable width={64} lineHeight={64} />
 			<SpriteIcons.JsonFormatter width={64} lineHeight={64} />
 			<SpriteIcons.JsonPathTester width={64} lineHeight={64} />
 			<SpriteIcons.JsonYaml width={64} lineHeight={64} />

@@ -5,7 +5,6 @@ export { _SVGColorBlind } from './_SVGColorBlind';
 export { _SVGColorPicker } from './_SVGColorPicker';
 export { _SVGCron } from './_SVGCron';
 export { _SVGRegexTester } from './_SVGRegexTester';
-export { _SVGExtensions } from './_SVGExtensions';
 export { _SVGGzip } from './_SVGGzip';
 export { _SVGHash } from './_SVGHash';
 export { _SVGHtml } from './_SVGHtml';

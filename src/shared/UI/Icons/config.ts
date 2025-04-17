@@ -6,7 +6,6 @@ export const SpriteIconsMap = [
 	'ColorPicker',
 	'Cron',
 	'RegexTester',
-	'Extensions',
 	'Gzip',
 	'Hash',
 	'Html',
