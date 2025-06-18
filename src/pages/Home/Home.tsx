@@ -1,4 +1,4 @@
-import { SpriteIcons } from '@/shared/UI';
+import { Icons, SpriteIcons } from '@/shared/UI';
 import { useI18n, useTheme } from '@/shared/hooks';
 import { LanguageProps, Languages } from '@/shared/i18n';
 import { Theme } from '@/shared/utils';
@@ -14,6 +14,7 @@ const Home = () => {
 		<div>
 			Home Page
 			<br />
+			<Icons.Plus color='green' />
 			<SpriteIcons.Base64Image width={64} lineHeight={64} />
 			<SpriteIcons.Base64Text width={64} lineHeight={64} />
 			<SpriteIcons.Certificate width={64} lineHeight={64} />

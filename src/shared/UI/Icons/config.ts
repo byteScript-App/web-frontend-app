@@ -1,3 +1,5 @@
+export const IconsMap = ['Plus'] as const;
+
 export const SpriteIconsMap = [
 	'Base64Image',
 	'Base64Text',
