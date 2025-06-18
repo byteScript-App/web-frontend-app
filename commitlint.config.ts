@@ -11,17 +11,17 @@ const Configuration: UserConfig = {
 			RuleConfigSeverity.Error,
 			'always',
 			[
-				'feat',
-				'fix',
-				'chore',
-				'docs',
-				'test',
-				'style',
-				'refactor',
-				'perf',
-				'build',
-				'ci',
-				'revert',
+				'feat', // A new feature added to the codebase.
+				'fix', // A bug fix or issue resolution in the codebase.
+				'chore', // Routine task updates or maintenance (e.g., dependencies, tooling).
+				'docs', // Changes or updates to documentation only.
+				'test', // Adding or updating tests (unit, integration, etc.).
+				'style', // Code style and formatting changes (e.g., whitespace, linting).
+				'refactor', // Code changes that neither fix a bug nor add a feature, improving readability or structure.
+				'perf', // Performance improvement or optimization.
+				'build', // Changes to the build system, package manager configurations, or external dependencies.
+				'ci', // Changes to continuous integration (CI) configurations or scripts.
+				'revert', // Reverts a previous commit or a rollback of changes.
 			],
 		],
 		'header-max-length': [2, 'always', 88],

@@ -16,6 +16,7 @@
 		"format:fix": "bunx biome format --write ./src",
 		"lint": "bunx biome lint ./src",
 		"lint:fix": "bunx biome lint --write ./src",
+		"check:deps": "madge --circular src/",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -49,6 +50,7 @@
 		"conventional-changelog-atom": "^5.0.0",
 		"globals": "^15.14.0",
 		"lefthook": "^1.10.10",
+		"madge": "^8.0.0",
 		"sass-embedded": "^1.85.1",
 		"typescript": "~5.7.2",
 		"typescript-eslint": "^8.22.0",
