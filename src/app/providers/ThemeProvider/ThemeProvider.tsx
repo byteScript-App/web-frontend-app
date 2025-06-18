@@ -1,12 +1,11 @@
 import { useThemeDetector } from '@/shared/hooks';
-import { THEME_DATA_ATTRIBUTE, Theme } from '@/shared/utils';
-import { LOCAL_PERSISTOR } from '@/shared/utils';
+import { STORAGE, THEME_DATA_ATTRIBUTE, Theme } from '@/shared/utils';
 import { FC, useEffect, useMemo, useState } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { ThemeProviderProps } from './types';
 
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children, initialTheme }) => {
-	const defaultTheme = LOCAL_PERSISTOR.theme.getFromStorage();
+	const defaultTheme = STORAGE.theme.get();
 	const systemTheme = useThemeDetector();
 
 	const [theme, setTheme] = useState<Theme>(initialTheme ?? defaultTheme ?? systemTheme);

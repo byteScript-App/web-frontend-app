@@ -1,5 +1,5 @@
 export * from './constants';
-export * from './localPersistor';
+export * from './storage';
 export * from './processSystemTheme';
 export * from './tokenExpirationChecker';
 export * from './processIcons';
