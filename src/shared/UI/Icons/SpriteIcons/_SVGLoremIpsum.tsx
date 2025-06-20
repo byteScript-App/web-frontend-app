@@ -1,9 +1,10 @@
 import { FC } from 'react';
 
 import { useSpriteSVGHoverState } from '@/shared/hooks';
-import { SpriteIconVariant, processSpriteIcons } from '@/shared/utils';
+import { SpriteIconVariant, cls, processSpriteIcons } from '@/shared/utils';
 
 import { SpriteIconsProps } from '../types';
+import styles from './SpriteIcons.module.scss';
 
 const _SVGLoremIpsum: FC<SpriteIconsProps> = ({
 	width = 48,
@@ -19,7 +20,7 @@ const _SVGLoremIpsum: FC<SpriteIconsProps> = ({
 			<svg
 				width={width}
 				height={lineHeight}
-				className={className}
+				className={cls(styles.spriteIcons, className)}
 				onMouseEnter={() => onHover(SpriteIconVariant.ACTIVE)}
 				onMouseLeave={() => onHover(SpriteIconVariant.DEFAULT)}
 				viewBox='0 0 48 48'
@@ -46,7 +47,7 @@ const _SVGLoremIpsum: FC<SpriteIconsProps> = ({
 			<svg
 				width={width}
 				height={lineHeight}
-				className={className}
+				className={cls(styles.spriteIcons, className)}
 				onMouseEnter={() => onHover(SpriteIconVariant.ACTIVE)}
 				onMouseLeave={() => onHover(SpriteIconVariant.DEFAULT)}
 				viewBox='0 0 48 48'
