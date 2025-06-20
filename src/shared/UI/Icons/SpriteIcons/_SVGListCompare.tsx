@@ -20,7 +20,7 @@ const _SVGListCompare: FC<SpriteIconsProps> = ({
 			<svg
 				width={width}
 				height={lineHeight}
-				className={cls(styles.spriteIcons, className)}
+				className={cls(styles.spriteIcon, className)}
 				onMouseEnter={() => onHover(SpriteIconVariant.ACTIVE)}
 				onMouseLeave={() => onHover(SpriteIconVariant.DEFAULT)}
 				viewBox='0 0 48 48'
@@ -89,7 +89,7 @@ const _SVGListCompare: FC<SpriteIconsProps> = ({
 			<svg
 				width={width}
 				height={lineHeight}
-				className={cls(styles.spriteIcons, className)}
+				className={cls(styles.spriteIcon, className)}
 				onMouseEnter={() => onHover(SpriteIconVariant.ACTIVE)}
 				onMouseLeave={() => onHover(SpriteIconVariant.DEFAULT)}
 				viewBox='0 0 48 48'

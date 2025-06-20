@@ -14,6 +14,10 @@ const Home = () => {
 		<div>
 			Home Page
 			<br />
+			<Icons.Plus />
+			<Icons.Plus color='primary' />
+			<Icons.Plus color='red' />
+			<Icons.Plus color='yellow' />
 			<Icons.Plus color='green' />
 			<br />
 			<SpriteIcons.Base64Image width={64} lineHeight={64} />
