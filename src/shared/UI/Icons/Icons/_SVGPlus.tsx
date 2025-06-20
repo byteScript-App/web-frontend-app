@@ -1,11 +1,14 @@
-import { FC } from 'react';
-
-import { IconsProps } from '@/shared/UI';
+import { IconsDefaultSize, IconsProps } from '@/shared/UI';
 import { cls } from '@/shared/utils';
 
 import styles from './Icons.module.scss';
 
-const _SvgPlus: FC<IconsProps> = ({ width = 48, lineHeight = 48, color, className }) => {
+const _SvgPlus = ({
+	width = IconsDefaultSize.w,
+	lineHeight = IconsDefaultSize.h,
+	color,
+	className,
+}: IconsProps) => {
 	return (
 		<svg
 			width={width}

@@ -1,17 +1,17 @@
-import { FC } from 'react';
-
+import { SpriteIconsDefaultSize } from '@/shared/UI';
 import { useSpriteSVGHoverState } from '@/shared/hooks';
 import { SpriteIconVariant, cls, processSpriteIcons } from '@/shared/utils';
 
 import { SpriteIconsProps } from '../types';
+
 import styles from './SpriteIcons.module.scss';
 
-const _SVGTimestampConvert: FC<SpriteIconsProps> = ({
-	width = 48,
-	lineHeight = 48,
+const _SVGTimestampConvert = ({
+	width = SpriteIconsDefaultSize.w,
+	lineHeight = SpriteIconsDefaultSize.h,
 	hoverEffect = true,
 	className,
-}) => {
+}: SpriteIconsProps) => {
 	const { onHover, elementState } = useSpriteSVGHoverState(hoverEffect);
 
 	return processSpriteIcons({

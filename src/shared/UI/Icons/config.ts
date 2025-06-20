@@ -1,5 +1,11 @@
+//ICONS
 export const IconsMap = ['Plus'] as const;
+export const IconsDefaultSize = {
+	w: 24,
+	h: 24,
+};
 
+// SPRITE ICONS
 export const SpriteIconsMap = [
 	'Base64Image',
 	'Base64Text',
@@ -33,3 +39,7 @@ export const SpriteIconsMap = [
 	'XmlCheck',
 	'XmlFormat',
 ] as const;
+export const SpriteIconsDefaultSize = {
+	w: 48,
+	h: 48,
+} as const;
