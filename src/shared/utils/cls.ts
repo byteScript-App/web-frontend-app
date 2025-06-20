@@ -13,7 +13,7 @@ export const cls = (...classes: ClassNameValueProp[]): string => {
 		if (typeof classname === 'object') {
 			for (const [key, value] of Object.entries(classname)) {
 				if (value) {
-					classes.push(key);
+					classnames.push(key);
 				}
 			}
 		}
