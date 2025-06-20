@@ -1,5 +1,5 @@
 //ICONS
-export const IconsMap = ['Plus'] as const;
+export const IconsMap = ['Plus', 'Hint', 'Language', 'Dark', 'Light'] as const;
 export const IconsDefaultSize = {
 	w: 24,
 	h: 24,
