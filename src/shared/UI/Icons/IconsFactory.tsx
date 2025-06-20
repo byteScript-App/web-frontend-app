@@ -1,3 +1,5 @@
+import { Suspense, lazy } from 'react';
+
 import {
 	IconsMap,
 	IconsProps,
@@ -6,7 +8,6 @@ import {
 	SpriteIconsProps,
 	SpriteIconsPrototypeProps,
 } from '@/shared/UI';
-import { Suspense, lazy } from 'react';
 
 export const SpriteIcons: SpriteIconsPrototypeProps = SpriteIconsMap.reduce((acc, iconName) => {
 	const LazyIcon = lazy(() => import(`./SpriteIcons/_SVG${iconName}.tsx`));

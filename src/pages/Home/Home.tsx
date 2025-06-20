@@ -15,6 +15,7 @@ const Home = () => {
 			Home Page
 			<br />
 			<Icons.Plus color='green' />
+			<br />
 			<SpriteIcons.Base64Image width={64} lineHeight={64} />
 			<SpriteIcons.Base64Text width={64} lineHeight={64} />
 			<SpriteIcons.Certificate width={64} lineHeight={64} />

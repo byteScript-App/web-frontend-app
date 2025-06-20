@@ -16,7 +16,6 @@ export interface IconsProps extends IconsBaseProps {
 
 export type IconsMapProps = typeof IconsMap;
 export type IconsLiteralProp = IconsMapProps[number];
-
 export type IconsPrototypeProps = Record<IconsLiteralProp, FC<IconsProps>>;
 
 // SPRITE ICONS
@@ -26,5 +25,4 @@ export interface SpriteIconsProps extends IconsBaseProps {
 
 export type SpriteIconsMapProps = typeof SpriteIconsMap;
 export type SpriteIconsLiteralProp = SpriteIconsMapProps[number];
-
 export type SpriteIconsPrototypeProps = Record<SpriteIconsLiteralProp, FC<SpriteIconsProps>>;
