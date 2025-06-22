@@ -1,43 +1,43 @@
 @use "../../../../app/styles/variables" as *;
 
 .icon {
-  path {
+  path, rect {
     stroke: $gray-200;
     transition: stroke 0.1s ease-in-out;
   }
 
   &:hover {
-    path {
+    path, rect {
       stroke: $white;
     }
   }
 
   &.primary {
-    path {
+    path, rect {
       stroke: $primary-light;
     }
   }
 
   &.red {
-    path {
+    path, rect {
       stroke: $red;
     }
   }
 
   &.yellow {
-    path {
+    path, rect {
       stroke: $yellow;
     }
   }
 
   &.green {
-    path {
+    path, rect {
       stroke: $green;
     }
   }
 
   &.blue {
-    path {
+    path, rect {
       stroke: $blue;
     }
   }

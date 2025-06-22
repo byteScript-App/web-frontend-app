@@ -14,9 +14,23 @@ export interface IconsProps extends IconsBaseProps {
 	color?: IconColors;
 }
 
+export interface IconsWithPositionProps extends IconsProps {
+	position?: 'left' | 'right';
+}
+
 export type IconsMapProps = typeof IconsMap;
 export type IconsLiteralProp = IconsMapProps[number];
-export type IconsPrototypeProps = Record<IconsLiteralProp, FC<IconsProps>>;
+
+type IconsSpecificProps = {
+	// declare types that specific icons should/must accept different types here:
+	Arrow: IconsWithPositionProps; // Arrow accepts `position`
+};
+
+export type IconsPrototypeProps = {
+	[K in IconsLiteralProp]: K extends keyof IconsSpecificProps
+		? FC<IconsSpecificProps[K]>
+		: FC<IconsProps>;
+};
 
 // SPRITE ICONS
 export interface SpriteIconsProps extends IconsBaseProps {

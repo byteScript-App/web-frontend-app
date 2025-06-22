@@ -45,6 +45,7 @@ export default defineConfig({
 					const moduleId = chunk.facadeModuleId
 						? path.parse(chunk.facadeModuleId).name
 						: chunk.name;
+					// TODO: create _SVG Prefix constant as it uses it multiple places
 					if (moduleId.startsWith('_SVG')) {
 						return 'svgs/[name]-[hash].js';
 					}

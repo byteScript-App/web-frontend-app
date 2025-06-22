@@ -2,7 +2,6 @@ import { Suspense, lazy } from 'react';
 
 import {
 	IconsMap,
-	IconsProps,
 	IconsPrototypeProps,
 	SpriteIconsMap,
 	SpriteIconsProps,
@@ -21,7 +20,7 @@ export const SpriteIcons: SpriteIconsPrototypeProps = SpriteIconsMap.reduce((acc
 
 export const Icons: IconsPrototypeProps = IconsMap.reduce((acc, iconName) => {
 	const LazyIcon = lazy(() => import(`./Icons/_SVG${iconName}.tsx`));
-	acc[iconName] = (props: IconsProps) => (
+	acc[iconName as keyof IconsPrototypeProps] = props => (
 		<Suspense fallback={<div>Loading...</div>}>
 			<LazyIcon {...props} />
 		</Suspense>
