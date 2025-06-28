@@ -3,7 +3,66 @@
 .icon {
   path, rect {
     stroke: $gray-200;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
     transition: stroke 0.1s ease-in-out;
+  }
+
+  // The icon default position is right
+  &.left {
+    transform: rotate(180deg);
+  }
+
+  &.loader {
+    path {
+      stroke-width: 2;
+      stroke-opacity: 0;
+      animation: pulse .9s linear infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        stroke-opacity: 0.2;
+        stroke-width: 2;
+      }
+      50% {
+        stroke-opacity: 1;
+        stroke-width: 3;
+      }
+    }
+
+    .s1 {
+      animation-delay: 0s;
+    }
+
+    .s2 {
+      animation-delay: 0.125s;
+    }
+
+    .s3 {
+      animation-delay: 0.25s;
+    }
+
+    .s4 {
+      animation-delay: 0.375s;
+    }
+
+    .s5 {
+      animation-delay: 0.5s;
+    }
+
+    .s6 {
+      animation-delay: 0.625s;
+    }
+
+    .s7 {
+      animation-delay: 0.75s;
+    }
+
+    .s8 {
+      animation-delay: 0.875s;
+    }
   }
 
   &:hover {

@@ -3,7 +3,7 @@ import { cls } from '@/shared/utils';
 
 import styles from './Icons.module.scss';
 
-const _SVGX = ({
+const _SVGScroll = ({
 	width = IconsDefaultSize.w,
 	lineHeight = IconsDefaultSize.h,
 	color,
@@ -18,10 +18,10 @@ const _SVGX = ({
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<path d='M17 7L7 17' />
-			<path d='M7 7L17 17' />
+			<path d='M6 15L12 21L18 15' />
+			<path d='M6 9L12 3L18 9' />
 		</svg>
 	);
 };
 
-export default _SVGX;
+export default _SVGScroll;

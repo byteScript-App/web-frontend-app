@@ -16,8 +16,14 @@ export const IconsMap = [
 	'Save',
 	'Swap',
 	'Arrow',
-	// asdasd
+	'Horizontal',
+	'Trash',
+	'Scroll',
+	'AddInfo',
+	'Refresh',
+	'Loader',
 ] as const;
+
 export const IconsDefaultSize = {
 	w: 24,
 	h: 24,

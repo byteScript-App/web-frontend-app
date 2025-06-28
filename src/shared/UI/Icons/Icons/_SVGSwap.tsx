@@ -18,34 +18,10 @@ const _SVGSwap = ({
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<path
-				d='M20 17L4 17'
-				stroke='#B6BBBB'
-				strokeWidth='2'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
-			<path
-				d='M8 13L4 17L8 21'
-				stroke='#B6BBBB'
-				strokeWidth='2'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
-			<path
-				d='M4 7L20 7'
-				stroke='#B6BBBB'
-				strokeWidth='2'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
-			<path
-				d='M16 3L20 7L16 11'
-				stroke='#B6BBBB'
-				strokeWidth='2'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
+			<path d='M20 17L4 17' />
+			<path d='M8 13L4 17L8 21' />
+			<path d='M4 7L20 7' />
+			<path d='M16 3L20 7L16 11' />
 		</svg>
 	);
 };

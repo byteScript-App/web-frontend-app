@@ -18,12 +18,17 @@ export interface IconsWithPositionProps extends IconsProps {
 	position?: 'left' | 'right';
 }
 
+export interface IconLoaderProps extends IconsProps {
+	spin?: boolean;
+}
+
 export type IconsMapProps = typeof IconsMap;
 export type IconsLiteralProp = IconsMapProps[number];
 
 type IconsSpecificProps = {
 	// declare types that specific icons should/must accept different types here:
 	Arrow: IconsWithPositionProps; // Arrow accepts `position`
+	Loader: IconLoaderProps; // Arrow accepts `position`
 };
 
 export type IconsPrototypeProps = {
