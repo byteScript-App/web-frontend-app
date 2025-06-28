@@ -30,17 +30,8 @@ const _SVGLoremIpsum = ({
 				<path
 					d='M24 8H40M24 16H40M24 24H40M8 32H40M8 40H40M24 12H40M24 20H40M8 28H40M8 36H40'
 					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
-				<path
-					d='M8 8V24H20M14 18V12M14 8.2V8'
-					stroke='#562BBA'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M8 8V24H20M14 18V12M14 8.2V8' stroke='#562BBA' />
 			</svg>
 		),
 		activeState: (
@@ -57,17 +48,8 @@ const _SVGLoremIpsum = ({
 				<path
 					d='M24 8H40M24 16H40M24 24H40M8 32H40M8 40H40M24 12H40M24 20H40M8 28H40M8 36H40'
 					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
-				<path
-					d='M8 8V24H20M14 18V12M14 8.2V8'
-					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M8 8V24H20M14 18V12M14 8.2V8' stroke='#00FFF0' />
 			</svg>
 		),
 	});

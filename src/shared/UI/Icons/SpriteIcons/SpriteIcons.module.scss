@@ -1,5 +1,8 @@
 .spriteIcon {
   path {
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
     transition: stroke 0.1s ease-in-out;
   }
 }

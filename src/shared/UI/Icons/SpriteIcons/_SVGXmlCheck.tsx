@@ -27,34 +27,10 @@ const _SVGXmlCheck = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M34 34L44 24L34 14'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M14 14L4 24L14 34'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M30 18L24 30L18 24'
-					stroke='#0FA84B'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M28 6L24 24M20 42L22 33'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M34 34L44 24L34 14' stroke='#404342' />
+				<path d='M14 14L4 24L14 34' stroke='#404342' />
+				<path d='M30 18L24 30L18 24' stroke='#0FA84B' />
+				<path d='M28 6L24 24M20 42L22 33' stroke='#404342' />
 			</svg>
 		),
 		activeState: (
@@ -68,34 +44,10 @@ const _SVGXmlCheck = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M34 34L44 24L34 14'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M14 14L4 24L14 34'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M30 18L24 30L18 24'
-					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M28 6L24 24M20 42L22 33'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M34 34L44 24L34 14' stroke='#009990' />
+				<path d='M14 14L4 24L14 34' stroke='#009990' />
+				<path d='M30 18L24 30L18 24' stroke='#00FFF0' />
+				<path d='M28 6L24 24M20 42L22 33' stroke='#009990' />
 			</svg>
 		),
 	});

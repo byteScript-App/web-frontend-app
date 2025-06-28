@@ -30,23 +30,14 @@ const _SVGJsonYaml = ({
 				<path
 					d='M37 40C39.524 40 42 37.954 42 35.428V26L43.9996 24L42 22V12.572C42 10.046 39.526 8 37 8M37 40L39 38M37 40L39 42'
 					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
 				<path
 					d='M11 8C8.474 8 6 10.046 6 12.572V22L4 24L6 26V35.428C6 37.954 8.474 40 11 40M11 8L9 6M11 8L9 10'
 					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
 				<path
 					d='M29 25V33H34M21 22L22 20M22 20L25 14L28 20M22 20H28M28 20L29 22M14 14L18 19M18 19L22 14M18 19V22M18 33V25L22 30.5L26 25V33'
 					stroke='#D42E22'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
 			</svg>
 		),
@@ -64,23 +55,14 @@ const _SVGJsonYaml = ({
 				<path
 					d='M11 8C8.474 8 6 10.046 6 12.572V22L4 24L6 26V35.428C6 37.954 8.474 40 11 40M11 8L9 6M11 8L9 10'
 					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
 				<path
 					d='M29 25V33H34M21 22L22 20M22 20L25 14L28 20M22 20H28M28 20L29 22M14 14L18 19M18 19L22 14M18 19V22M18 33V25L22 30.5L26 25V33'
 					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
 				<path
 					d='M37 40C39.524 40 42 37.954 42 35.428V26L43.9996 24L42 22V12.572C42 10.046 39.526 8 37 8M37 40L39 38M37 40L39 42'
 					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
 			</svg>
 		),

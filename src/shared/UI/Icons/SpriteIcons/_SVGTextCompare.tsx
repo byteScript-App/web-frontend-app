@@ -30,17 +30,8 @@ const _SVGTextCompare = ({
 				<path
 					d='M20 6V10M20 42V18M6 10V10C6 7.79086 7.79086 6 10 6H30C32.2091 6 34 7.79086 34 10V10'
 					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
-				<path
-					d='M18 14H38M28 14V34'
-					stroke='#D42E22'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M18 14H38M28 14V34' stroke='#D42E22' />
 			</svg>
 		),
 		activeState: (
@@ -57,17 +48,8 @@ const _SVGTextCompare = ({
 				<path
 					d='M20 6V10M20 42V18M6 10V10C6 7.79086 7.79086 6 10 6H30C32.2091 6 34 7.79086 34 10V10'
 					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
 				/>
-				<path
-					d='M18 14H38M28 14V34'
-					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M18 14H38M28 14V34' stroke='#00FFF0' />
 			</svg>
 		),
 	});

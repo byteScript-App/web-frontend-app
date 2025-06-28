@@ -27,27 +27,9 @@ const _SVGXmlFormat = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M34 34L44 24L34 14'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M14 14L4 24L14 34'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M28 6L20 42'
-					stroke='#D89126'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M34 34L44 24L34 14' stroke='#404342' />
+				<path d='M14 14L4 24L14 34' stroke='#404342' />
+				<path d='M28 6L20 42' stroke='#D89126' />
 			</svg>
 		),
 		activeState: (
@@ -61,27 +43,9 @@ const _SVGXmlFormat = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M34 34L44 24L34 14'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M14 14L4 24L14 34'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M28 6L20 42'
-					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M34 34L44 24L34 14' stroke='#009990' />
+				<path d='M14 14L4 24L14 34' stroke='#009990' />
+				<path d='M28 6L20 42' stroke='#00FFF0' />
 			</svg>
 		),
 	});

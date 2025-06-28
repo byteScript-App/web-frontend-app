@@ -27,20 +27,8 @@ const _SVGNumberConvert = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M20 6L14 42M34 6L28 42'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M42 18H5.99996L12 14M4 30H40L36 34'
-					stroke='#562BBA'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M20 6L14 42M34 6L28 42' stroke='#404342' />
+				<path d='M42 18H5.99996L12 14M4 30H40L36 34' stroke='#562BBA' />
 			</svg>
 		),
 		activeState: (
@@ -54,20 +42,8 @@ const _SVGNumberConvert = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M20 6L14 42M34 6L28 42'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M42 18H5.99996L12 14M4 30H40L36 34'
-					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M20 6L14 42M34 6L28 42' stroke='#009990' />
+				<path d='M42 18H5.99996L12 14M4 30H40L36 34' stroke='#00FFF0' />
 			</svg>
 		),
 	});

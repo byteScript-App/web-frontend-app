@@ -27,20 +27,8 @@ const _SVGHtml = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M44 4H4L8 42L24 46L40 42L44 4Z'
-					stroke='#404342'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M35 12H13L14 22H34L32.5 36L24 38L15.75 36L15.5 34'
-					stroke='#D89126'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M44 4H4L8 42L24 46L40 42L44 4Z' stroke='#404342' />
+				<path d='M35 12H13L14 22H34L32.5 36L24 38L15.75 36L15.5 34' stroke='#D89126' />
 			</svg>
 		),
 		activeState: (
@@ -54,20 +42,8 @@ const _SVGHtml = ({
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
-				<path
-					d='M44 4H4L8 42L24 46L40 42L44 4Z'
-					stroke='#009990'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
-				<path
-					d='M35 12H13L14 22H34L32.5 36L24 38L15.75 36L15.5 34'
-					stroke='#00FFF0'
-					strokeWidth='2'
-					strokeLinecap='round'
-					strokeLinejoin='round'
-				/>
+				<path d='M44 4H4L8 42L24 46L40 42L44 4Z' stroke='#009990' />
+				<path d='M35 12H13L14 22H34L32.5 36L24 38L15.75 36L15.5 34' stroke='#00FFF0' />
 			</svg>
 		),
 	});
