@@ -1,4 +1,4 @@
-import { Icons, SpriteIcons } from '@/shared/UI';
+import { Icons } from '@/shared/UI';
 import { useI18n, useTheme } from '@/shared/hooks';
 import { LanguageProps, Languages } from '@/shared/i18n';
 import { Theme } from '@/shared/utils';
@@ -44,41 +44,14 @@ const Home = () => {
 			<Icons.Info />
 			<Icons.Eye />
 			<Icons.EyeOff />
-			<br />
-			<br />
-			<SpriteIcons.Base64Image />
-			<SpriteIcons.Base64Text />
-			<SpriteIcons.Certificate />
-			<SpriteIcons.ColorBlind />
-			<SpriteIcons.ColorPicker />
-			<SpriteIcons.Cron />
-			<SpriteIcons.RegexTest />
-			<SpriteIcons.Gzip />
-			<SpriteIcons.Hash />
-			<SpriteIcons.Html />
-			<SpriteIcons.ImageConvert />
-			<SpriteIcons.JsonToTable />
-			<br />
-			<SpriteIcons.JsonFormat />
-			<SpriteIcons.JsonPathTest />
-			<SpriteIcons.JsonYaml />
-			<SpriteIcons.JWT />
-			<SpriteIcons.LoremIpsum />
-			<SpriteIcons.ListCompare />
-			<SpriteIcons.Markdown />
-			<SpriteIcons.NumberConvert />
-			<SpriteIcons.PasswordGenerate />
-			<SpriteIcons.QrCode />
-			<SpriteIcons.SqlFormat />
-			<SpriteIcons.TextAnalyze />
-			<br />
-			<SpriteIcons.TextCompare />
-			<SpriteIcons.TextEscape />
-			<SpriteIcons.TimestampConvert />
-			<SpriteIcons.Url />
-			<SpriteIcons.UuidGenerate />
-			<SpriteIcons.XmlCheck />
-			<SpriteIcons.XmlFormat />
+			<Icons.PinOutline pinRotate />
+			<Icons.PinOutline />
+			<Icons.PinFilled />
+			<Icons.PinDuotone />
+			<Icons.Menu />
+			<Icons.FlagOutline />
+			<Icons.FlagFilled />
+			<Icons.MenuX />
 			<br />
 			{theme}
 			<button onClick={() => setTheme(Theme.system)}>System Theme</button>

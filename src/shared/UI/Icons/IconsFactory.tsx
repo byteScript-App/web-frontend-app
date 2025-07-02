@@ -11,6 +11,7 @@ import {
 export const SpriteIcons: SpriteIconsPrototypeProps = SpriteIconsMap.reduce((acc, iconName) => {
 	const LazyIcon = lazy(() => import(`./SpriteIcons/_SVG${iconName}.tsx`));
 	acc[iconName] = (props: SpriteIconsProps) => (
+		// TODO: Change fallback!
 		<Suspense fallback={<div>Loading...</div>}>
 			<LazyIcon {...props} />
 		</Suspense>
@@ -21,6 +22,7 @@ export const SpriteIcons: SpriteIconsPrototypeProps = SpriteIconsMap.reduce((acc
 export const Icons: IconsPrototypeProps = IconsMap.reduce((acc, iconName) => {
 	const LazyIcon = lazy(() => import(`./Icons/_SVG${iconName}.tsx`));
 	acc[iconName as keyof IconsPrototypeProps] = props => (
+		// TODO: Change fallback!
 		<Suspense fallback={<div>Loading...</div>}>
 			<LazyIcon {...props} />
 		</Suspense>

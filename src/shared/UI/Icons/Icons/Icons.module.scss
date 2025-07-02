@@ -9,16 +9,20 @@
     transition: stroke 0.1s ease-in-out;
   }
 
-  // The icon default position is right
+  // Default position is right, handle left rotation
   &.left {
     transform: rotate(180deg);
+  }
+
+  &.pinRotate {
+    transform: rotate(45deg);
   }
 
   &.loader {
     path {
       stroke-width: 2;
       stroke-opacity: 0;
-      animation: pulse .9s linear infinite;
+      animation: pulse 0.9s linear infinite;
     }
 
     @keyframes pulse {
@@ -32,36 +36,10 @@
       }
     }
 
-    .s1 {
-      animation-delay: 0s;
-    }
-
-    .s2 {
-      animation-delay: 0.125s;
-    }
-
-    .s3 {
-      animation-delay: 0.25s;
-    }
-
-    .s4 {
-      animation-delay: 0.375s;
-    }
-
-    .s5 {
-      animation-delay: 0.5s;
-    }
-
-    .s6 {
-      animation-delay: 0.625s;
-    }
-
-    .s7 {
-      animation-delay: 0.75s;
-    }
-
-    .s8 {
-      animation-delay: 0.875s;
+    @for $i from 1 through 8 {
+      .s#{$i} {
+        animation-delay: #{0.125 * ($i - 1)}s;
+      }
     }
   }
 
@@ -71,33 +49,35 @@
     }
   }
 
-  &.primary {
-    path, rect {
-      stroke: $primary-light;
+  @each $color-class, $color-value in ("primary": $primary-light, "red": $red, "yellow": $yellow, "green": $green, "blue": $blue) {
+    &.#{$color-class} {
+      path, rect {
+        stroke: $color-value;
+      }
     }
   }
 
-  &.red {
-    path, rect {
-      stroke: $red;
+  // Special styles for filled icon
+  &.filled {
+    path {
+      fill: $gray-200;
+      transition: fill 0.1s ease-in-out, stroke 0.1s ease-in-out;
     }
-  }
 
-  &.yellow {
-    path, rect {
-      stroke: $yellow;
+    &:hover {
+      path {
+        stroke: $white;
+        fill: $white;
+      }
     }
-  }
 
-  &.green {
-    path, rect {
-      stroke: $green;
-    }
-  }
-
-  &.blue {
-    path, rect {
-      stroke: $blue;
+    @each $color-class, $color-value in ("primary": $primary-light, "red": $red, "yellow": $yellow, "green": $green, "blue": $blue) {
+      &.#{$color-class} {
+        path {
+          stroke: $color-value;
+          fill: $color-value;
+        }
+      }
     }
   }
 }

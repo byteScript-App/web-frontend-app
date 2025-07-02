@@ -14,12 +14,15 @@ export interface IconsProps extends IconsBaseProps {
 	color?: IconColors;
 }
 
-export interface IconsWithPositionProps extends IconsProps {
+// ICONS with specific props
+export interface IconWithPositionProps extends IconsProps {
 	position?: 'left' | 'right';
 }
-
 export interface IconLoaderProps extends IconsProps {
 	spin?: boolean;
+}
+export interface IconPinRotateProps extends IconsProps {
+	pinRotate?: boolean;
 }
 
 export type IconsMapProps = typeof IconsMap;
@@ -27,8 +30,11 @@ export type IconsLiteralProp = IconsMapProps[number];
 
 type IconsSpecificProps = {
 	// declare types that specific icons should/must accept different types here:
-	Arrow: IconsWithPositionProps; // Arrow accepts `position`
-	Loader: IconLoaderProps; // Arrow accepts `position`
+	Arrow: IconWithPositionProps; // Arrow icon accepts `position`
+	Loader: IconLoaderProps; // Loader icon accepts `spin`
+	PinDuotone: IconPinRotateProps; // PinDuotone accepts `pinRotate`
+	PinFilled: IconPinRotateProps; // PinFilled accepts `pinRotate`
+	PinOutline: IconPinRotateProps; // PinOutline accepts `pinRotate`
 };
 
 export type IconsPrototypeProps = {

@@ -27,6 +27,13 @@ export const IconsMap = [
 	'Info',
 	'EyeOff',
 	'Eye',
+	'PinOutline',
+	'PinFilled',
+	'PinDuotone',
+	'Menu',
+	'FlagOutline',
+	'FlagFilled',
+	'MenuX',
 ] as const;
 
 export const IconsDefaultSize = {
@@ -68,6 +75,7 @@ export const SpriteIconsMap = [
 	'XmlCheck',
 	'XmlFormat',
 ] as const;
+
 export const SpriteIconsDefaultSize = {
 	w: 48,
 	h: 48,
