@@ -22,6 +22,11 @@ export const IconsMap = [
 	'AddInfo',
 	'Refresh',
 	'Loader',
+	'Pause',
+	'Done',
+	'Info',
+	'EyeOff',
+	'Eye',
 ] as const;
 
 export const IconsDefaultSize = {

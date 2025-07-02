@@ -39,6 +39,11 @@ const Home = () => {
 			<Icons.Refresh />
 			<Icons.Loader spin={false} />
 			<Icons.Loader />
+			<Icons.Pause />
+			<Icons.Done />
+			<Icons.Info />
+			<Icons.Eye />
+			<Icons.EyeOff />
 			<br />
 			<br />
 			<SpriteIcons.Base64Image />
